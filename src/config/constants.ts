@@ -1,0 +1,41 @@
+export const HTTP_STATUS = {
+  OK: 200,
+  CREATED: 201,
+  NO_CONTENT: 204,
+  BAD_REQUEST: 400,
+  UNAUTHORIZED: 401,
+  FORBIDDEN: 403,
+  NOT_FOUND: 404,
+  CONFLICT: 409,
+  UNPROCESSABLE: 422,
+  INTERNAL_SERVER_ERROR: 500,
+} as const;
+
+export const PROJECT_ROLES = {
+  OWNER: "OWNER",
+  ADMIN: "ADMIN",
+  MEMBER: "MEMBER",
+} as const;
+
+export const TASK_STATUS = {
+  TODO: "TODO",
+  IN_PROGRESS: "IN_PROGRESS",
+  DONE: "DONE",
+} as const;
+
+export const TASK_PRIORITY = {
+  LOW: "LOW",
+  MEDIUM: "MEDIUM",
+  HIGH: "HIGH",
+  URGENT: "URGENT",
+} as const;
+
+export const NOTIFICATION_TYPE = {
+  TASK_ASSIGNED: "TASK_ASSIGNED",
+  TASK_UPDATED: "TASK_UPDATED",
+  COMMENT_ADDED: "COMMENT_ADDED",
+  MEMBER_ADDED: "MEMBER_ADDED",
+} as const;
+
+export const SALT_ROUNDS = 12;
+export const API_PREFIX = "/api/v1";
